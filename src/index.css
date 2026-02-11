@@ -82,17 +82,23 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
     font-family: 'Open Sans', system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Montserrat', system-ui, sans-serif;
     @apply text-primary font-bold;
   }
 
   html {
     scroll-behavior: smooth;
+    @apply overflow-x-hidden;
   }
 }
 

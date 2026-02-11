@@ -38,14 +38,14 @@ const TestimonialsSection = () => {
           {/* Arrows */}
           <button
             onClick={prev}
-            className="absolute -left-4 md:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-primary hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="absolute left-2 md:-left-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-primary hover:bg-accent hover:text-accent-foreground transition-colors"
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={20} />
           </button>
           <button
             onClick={next}
-            className="absolute -right-4 md:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-primary hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="absolute right-2 md:-right-14 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-primary hover:bg-accent hover:text-accent-foreground transition-colors"
             aria-label="Next testimonial"
           >
             <ChevronRight size={20} />
@@ -78,9 +78,8 @@ const TestimonialsSection = () => {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${
-                  i === current ? "bg-accent w-6" : "bg-border hover:bg-secondary/40"
-                }`}
+                className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-accent w-6" : "bg-border hover:bg-secondary/40"
+                  }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />
             ))}
