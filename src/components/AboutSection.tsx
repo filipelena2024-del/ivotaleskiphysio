@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { GraduationCap, Award, Hand, Clock } from "lucide-react";
 import { User } from "lucide-react";
 
-const credIcons = [GraduationCap, Award, Hand, Clock];
+const credIcons = [GraduationCap, Hand, Clock];
 
 const AboutSection = () => {
   const { t } = useI18n();
 
-  const credentials = [t("cred_1"), t("cred_2"), t("cred_3"), t("cred_4")];
+  const credentials = [t("cred_1"), t("cred_3"), t("cred_4")];
 
   return (
     <section id="about" className="py-20 md:py-28 bg-warm">

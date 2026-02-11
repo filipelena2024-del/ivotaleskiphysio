@@ -39,10 +39,9 @@ const ContactSection = () => {
 
           {/* CTA Box */}
           <div className="bg-primary rounded-2xl p-8 text-center shadow-lg">
-            <h3 className="text-2xl font-heading text-primary-foreground mb-3">
+            <h3 className="text-2xl font-heading text-primary-foreground mb-6">
               {t("final_cta_title")}
             </h3>
-            <p className="text-primary-foreground/80 mb-6">{t("final_cta_text")}</p>
             <a
               href="tel:076424752"
               className="inline-flex px-8 py-3.5 rounded-full bg-accent text-accent-foreground font-bold text-lg hover:brightness-95 hover:-translate-y-0.5 transition-all"
