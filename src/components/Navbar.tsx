@@ -36,20 +36,17 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
             ? "bg-card/95 backdrop-blur-md shadow-sm py-3"
             : "bg-transparent py-5"
-        }`}
+          }`}
       >
         <div className="container flex items-center justify-between">
-          <a href="#" className="flex-shrink-0">
+          <a href="#" className="flex-shrink-0 flex items-center">
             <img
               src={logo}
               alt="Ivo Taleski Physiotherapy"
-              className="h-10 md:h-12 rounded-full hover:scale-105 transition-transform"
-              width={48}
-              height={48}
+              className="h-10 w-10 md:h-12 md:w-12 rounded-full object-contain hover:scale-105 transition-transform"
             />
           </a>
 
@@ -59,11 +56,10 @@ const Navbar = () => {
               <li key={l.href}>
                 <button
                   onClick={() => handleClick(l.href)}
-                  className={`font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full ${
-                    scrolled
+                  className={`font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full ${scrolled
                       ? "text-primary hover:text-secondary"
                       : "text-primary-foreground/90 hover:text-primary-foreground"
-                  }`}
+                    }`}
                 >
                   {l.label}
                 </button>
