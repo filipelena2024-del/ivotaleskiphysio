@@ -22,7 +22,6 @@ const Navbar = () => {
 
   const links = [
     { href: "#about", label: t("nav_about") },
-    { href: "#treatments", label: t("nav_treatments") },
     { href: "#process", label: t("nav_process") },
     { href: "#contact", label: t("nav_contact") },
   ];
@@ -37,8 +36,8 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
-            ? "bg-card/95 backdrop-blur-md shadow-sm py-3"
-            : "bg-transparent py-5"
+          ? "bg-card/95 backdrop-blur-md shadow-sm py-3"
+          : "bg-transparent py-5"
           }`}
       >
         <div className="container flex items-center justify-between">
@@ -57,8 +56,8 @@ const Navbar = () => {
                 <button
                   onClick={() => handleClick(l.href)}
                   className={`font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full ${scrolled
-                      ? "text-primary hover:text-secondary"
-                      : "text-primary-foreground/90 hover:text-primary-foreground"
+                    ? "text-primary hover:text-secondary"
+                    : "text-primary-foreground/90 hover:text-primary-foreground"
                     }`}
                 >
                   {l.label}

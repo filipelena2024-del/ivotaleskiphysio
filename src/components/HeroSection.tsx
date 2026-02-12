@@ -37,9 +37,18 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="text-base md:text-xl text-primary-foreground/75 font-medium mb-8 max-w-lg"
+            className="text-base md:text-xl text-primary-foreground/75 font-medium mb-2 max-w-lg"
           >
             {t("hero_subtitle")}
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+            className="text-base md:text-xl text-accent font-bold mb-8"
+          >
+            {t("hero_stats")}
           </motion.p>
 
           <motion.div
